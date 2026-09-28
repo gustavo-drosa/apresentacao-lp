@@ -1,0 +1,60 @@
+/* =========================================================
+   BASE — CUSTOM PROPERTIES (DESIGN TOKENS)
+   Paleta de cores extraída do Figma:
+   "Currículo online - exercício de cor"
+   ========================================================= */
+
+:root {
+  /* ── Colors ── */
+  --color-bg:           #f5f5f5;
+  --color-surface:      #ffffff;
+  --color-dark-bg:      #111111;
+  --color-dark-surface: #1a1a1a;
+
+  --color-text-primary:   #111111;
+  --color-text-secondary: #555555;
+  --color-text-muted:     #888888;
+  --color-text-light:     #f5f5f5;
+
+  /* Accent — from Figma */
+  --color-accent-green:        #a3e635;  /* lime / yellow-green */
+  --color-accent-green-hover:  #8ecc00;
+  --color-accent-orange:       #cc5500;  /* burnt orange */
+  --color-accent-gray:         #dddddd;  /* borders / tags */
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Fluid type scale — clamp(min, preferred, max) */
+  --text-xs:   clamp(0.75rem,   1vw,   0.875rem);
+  --text-sm:   clamp(0.875rem,  1.5vw, 1rem);
+  --text-base: clamp(1rem,      2vw,   1.125rem);
+  --text-lg:   clamp(1.125rem,  2vw,   1.25rem);
+  --text-xl:   clamp(1.25rem,   2.5vw, 1.5rem);
+  --text-2xl:  clamp(1.5rem,    3vw,   2rem);
+  --text-3xl:  clamp(2rem,      4vw,   3rem);
+  --text-4xl:  clamp(2.5rem,    6vw,   4.5rem);
+  --text-5xl:  clamp(3rem,      9vw,   7rem);   /* display labels */
+
+  /* ── Spacing ── */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  6rem;
+  --space-2xl: 10rem;
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-pad: 1.5rem;
+  --section-pad-y: clamp(4rem, 10vw, 8rem);
+
+  /* ── Borders & Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}

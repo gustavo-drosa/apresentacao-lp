@@ -1,0 +1,29 @@
+/* =========================================================
+   SECTION — SKILLS
+   (Pills de skills estilizadas em css/components/tags.css)
+   ========================================================= */
+
+.skills__grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.skills__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skills__category {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

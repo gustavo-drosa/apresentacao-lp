@@ -1,0 +1,60 @@
+/* =========================================================
+   COMPONENT — BUTTONS
+   Variantes: primary, outline, lg
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-fast);
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* Variante primária — fundo verde limão */
+.btn--primary {
+  background-color: var(--color-accent-green);
+  color: var(--color-dark-bg);
+  border-color: var(--color-accent-green);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent-green-hover);
+  border-color: var(--color-accent-green-hover);
+}
+
+/* Variante outline — borda visível, sem fundo */
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg);
+}
+
+/* Modificador de tamanho */
+.btn--lg {
+  padding: 1rem 2.5rem;
+  font-size: var(--text-base);
+}

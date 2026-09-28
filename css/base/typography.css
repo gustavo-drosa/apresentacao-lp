@@ -1,0 +1,54 @@
+/* =========================================================
+   BASE — TYPOGRAPHY
+   Estilos tipográficos globais reutilizáveis
+   ========================================================= */
+
+/* Título de seção — padrão reutilizado em todas as seções */
+.section__title {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
+}
+
+.section__title--light {
+  color: var(--color-text-light);
+}
+
+/* Label vertical decorativa (feature do Figma) */
+.section__label-col {
+  display: none; /* ativado via media query no layout/sections.css */
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
+.section__label-col--light .section__label-vertical {
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.12);
+}
+
+.section__label-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: var(--text-5xl);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-accent-gray);
+  user-select: none;
+}
+
+/* Classe utilitária de acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,9 @@
+/* =========================================================
+   SECTION — EXPERIENCE
+   (Componentes de timeline estão em css/components/timeline.css)
+   ========================================================= */
+
+.experience__body {
+  display: flex;
+  flex-direction: column;
+}

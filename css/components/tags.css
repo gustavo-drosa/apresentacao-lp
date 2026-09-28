@@ -1,0 +1,57 @@
+/* =========================================================
+   COMPONENT — TAGS & SKILL PILLS
+   Tags compactas usadas em experience / projects
+   Pills arredondadas usadas em skills
+   ========================================================= */
+
+/* ── Tag (quadrada/pequena) ──────────────────────────────── */
+.tag {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  background-color: var(--color-accent-gray);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+/* Variante sobre fundo escuro (projetos) */
+.tag--light {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-light);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ── Skill Pill (arredondada) ────────────────────────────── */
+.skill-pill {
+  display: inline-flex;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-accent-gray);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
+}
+
+.skill-pill:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg);
+}
+
+/* Variante com destaque (skills de frontend) */
+.skill-pill--accent {
+  background-color: var(--color-accent-green);
+  color: var(--color-dark-bg);
+  border-color: var(--color-accent-green);
+  font-weight: 600;
+}
+
+.skill-pill--accent:hover {
+  background-color: var(--color-accent-green-hover);
+  border-color: var(--color-accent-green-hover);
+}

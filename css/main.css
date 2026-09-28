@@ -1,0 +1,28 @@
+/* =========================================================
+   MAIN STYLESHEET — GUSTAVO DIAS ROSA
+   Arquitetura modular de CSS (Base, Layout, Components, Sections)
+   ========================================================= */
+
+/* ── 1. Base ────────────────────────────────────────────── */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+
+/* ── 2. Layout ──────────────────────────────────────────── */
+@import url('./layout/container.css');
+@import url('./layout/sections.css');
+
+/* ── 3. Components ──────────────────────────────────────── */
+@import url('./components/buttons.css');
+@import url('./components/tags.css');
+@import url('./components/timeline.css');
+
+/* ── 4. Sections ────────────────────────────────────────── */
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/about.css');
+@import url('./sections/experience.css');
+@import url('./sections/projects.css');
+@import url('./sections/skills.css');
+@import url('./sections/education.css');
+@import url('./sections/footer.css');

@@ -1,0 +1,120 @@
+/* =========================================================
+   SECTION — FOOTER & CONTACT
+   ========================================================= */
+
+.footer {
+  position: relative;
+  padding-block: var(--space-xl) var(--space-lg);
+  overflow: hidden;
+}
+
+.footer__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.footer__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.footer__title {
+  font-size: var(--text-4xl);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--color-text-light);
+}
+
+.footer__subtitle {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 45ch;
+}
+
+.footer__divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer__contacts address {
+  font-style: normal;
+}
+
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer__contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__contact-link:hover {
+  color: var(--color-accent-green);
+  text-decoration: none;
+}
+
+.footer__contact-icon {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer__copy {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__back-top {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-accent-green);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.footer__back-top:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* Diagonal accent glow decorativo do Figma */
+.footer__accent {
+  position: absolute;
+  bottom: -30%;
+  right: -5%;
+  width: 55vw;
+  height: 70%;
+  background: linear-gradient(
+    135deg,
+    transparent 40%,
+    rgba(163, 230, 53, 0.03) 60%,
+    rgba(204, 85, 0, 0.05) 100%
+  );
+  transform: skewY(-12deg);
+  pointer-events: none;
+}

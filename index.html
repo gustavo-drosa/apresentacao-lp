@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículo online de Gustavo Dias Rosa — Desenvolvedor de Software Full Stack (PHP, MySQL, React, TypeScript)." />
+  <title>Gustavo Dias Rosa — Desenvolvedor de Software</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#hero" class="nav__logo" aria-label="Ir para o topo">
+        <span class="nav__logo-text">GDR</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about" class="nav__link">Sobre</a></li>
+        <li><a href="#experience" class="nav__link">Experiências</a></li>
+        <li><a href="#projects" class="nav__link">Projetos</a></li>
+        <li><a href="#education" class="nav__link">Formação</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contato</a></li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button class="nav__menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-mobile" type="button">
+        <span class="nav__menu-icon"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" class="hero" aria-label="Apresentação">
+      <div class="hero__content container">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Olá, eu sou</p>
+          <h1 class="hero__name">Gustavo<br />Dias Rosa</h1>
+          <p class="hero__role">
+            Desenvolvedor de Software<br />
+            <span class="hero__role--highlight">Full Stack</span>
+          </p>
+          <p class="hero__location">
+            <span aria-label="Localização">📍</span> Brazópolis / Itajubá / Machado — MG &nbsp;·&nbsp;
+            Presencial, Híbrido ou Remoto
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Entre em contato</a>
+            <a href="Curriculo_Gustavo_Dias_Rosa.pdf" class="btn btn--outline" download aria-label="Baixar currículo em PDF">Baixar CV</a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper" aria-hidden="true">
+          <div class="hero__image-placeholder">
+            <span class="hero__image-initials">GDR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__accent" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== ABOUT / SUMMARY ===================== -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <div class="container about__inner">
+        <div class="section__label-col" aria-hidden="true">
+          <span class="section__label-vertical">SOBRE</span>
+        </div>
+
+        <div class="about__body">
+          <h2 id="about-heading" class="section__title">Quem sou eu</h2>
+          <p class="about__summary">
+            Desenvolvedor de Software com sólida formação técnica e experiência prática no
+            desenvolvimento de sistemas web corporativos, automação de rotinas e modelagem de
+            banco de dados. Vivência na criação de soluções de alto impacto para o setor
+            público — saúde pública e defesa do consumidor — integrando
+            <strong>PHP, APIs REST e MySQL</strong>. Experiência prática em desenvolvimento
+            frontend moderno com <strong>React e TypeScript</strong> em projetos acadêmicos e
+            de extensão comunitária premiados. Focado em boas práticas, integridade de dados e
+            resolução eficiente de problemas.
+          </p>
+
+          <ul class="about__quick-info" role="list">
+            <li class="about__info-card">
+              <span class="about__info-icon" aria-hidden="true">✉</span>
+              <a href="mailto:gdiasrosa1@gmail.com" class="about__info-link">
+                gdiasrosa1@gmail.com
+              </a>
+            </li>
+            <li class="about__info-card">
+              <span class="about__info-icon" aria-hidden="true">☎</span>
+              <a href="tel:+5535920014988" class="about__info-link">(35) 92001-4988</a>
+            </li>
+            <li class="about__info-card">
+              <span class="about__info-icon" aria-hidden="true">⌨</span>
+              <a href="https://github.com/gustavo-drosa" class="about__info-link" target="_blank" rel="noopener noreferrer">github.com/gustavo-drosa</a>
+            </li>
+            <li class="about__info-card">
+              <span class="about__info-icon" aria-hidden="true">🌐</span>
+              <span>Português (Nativo) · Inglês (Intermediário)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="experience section" aria-labelledby="experience-heading">
+      <div class="container experience__inner">
+        <div class="section__label-col" aria-hidden="true">
+          <span class="section__label-vertical">EXPERI&shy;ÊNCIAS</span>
+        </div>
+
+        <div class="experience__body">
+          <h2 id="experience-heading" class="section__title">
+            Experiências<br />Profissionais
+          </h2>
+
+          <ol class="timeline" reversed>
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__card-header">
+                  <div class="timeline__period">
+                    <time datetime="2025-11">Nov 2025</time> – Presente
+                  </div>
+                  <h3 class="timeline__company">
+                    Fundação de Pesquisa e Assessoramento à Indústria (FPAI)
+                  </h3>
+                  <p class="timeline__role">Desenvolvedor de Sistemas Web</p>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li>
+                    Desenvolvimento e sustentação do sistema de gestão de processos para o
+                    <strong>PROCON</strong>, garantindo conformidade legal e agilidade operacional.
+                  </li>
+                  <li>
+                    Criação e otimização de módulos de negócio em <strong>PHP</strong>,
+                    macros avançadas e rotinas automatizadas.
+                  </li>
+                  <li>
+                    Modelagem, normalização e consultas complexas em <strong>MySQL</strong>,
+                    priorizando performance e segurança de dados sensíveis.
+                  </li>
+                  <li>
+                    Integração contínua com APIs e serviços externos para sincronização de dados
+                    entre plataformas.
+                  </li>
+                </ul>
+                <ul class="timeline__tags" role="list" aria-label="Tecnologias">
+                  <li class="tag">PHP</li>
+                  <li class="tag">MySQL</li>
+                  <li class="tag">Scriptcase</li>
+                  <li class="tag">API REST</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__card-header">
+                  <div class="timeline__period">
+                    <time datetime="2024-05">Mai 2024</time> – <time datetime="2025-12">Dez 2025</time>
+                  </div>
+                  <h3 class="timeline__company">DAC Engenharia Ltda</h3>
+                  <p class="timeline__role">Desenvolvedor de Sistemas Web</p>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li>
+                    Levantamento de requisitos, arquitetura e desenvolvimento do
+                    <strong>Sistema Municipal de Notificação e Controle de Dengue</strong>
+                    para a cidade de Itajubá/MG.
+                  </li>
+                  <li>
+                    Desenvolvimento de dashboards analíticos, relatórios dinâmicos e consultas
+                    gerenciais em <strong>PHP e MySQL</strong>.
+                  </li>
+                  <li>
+                    Implementação de integrações com APIs externas para automação e validação de
+                    informações cadastrais.
+                  </li>
+                  <li>
+                    Treinamento técnico com servidores municipais e suporte contínuo focado em
+                    usabilidade e desempenho.
+                  </li>
+                </ul>
+                <ul class="timeline__tags" role="list" aria-label="Tecnologias">
+                  <li class="tag">PHP</li>
+                  <li class="tag">MySQL</li>
+                  <li class="tag">Scriptcase</li>
+                  <li class="tag">Dashboard</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__card-header">
+                  <div class="timeline__period">
+                    <time datetime="2021-06">Jun 2021</time> – <time datetime="2021-11">Nov 2021</time>
+                  </div>
+                  <h3 class="timeline__company">WCT Instalações e Serviços Ltda</h3>
+                  <p class="timeline__role">Auxiliar Técnico em Informática</p>
+                </header>
+                <ul class="timeline__highlights" role="list">
+                  <li>
+                    Suporte técnico de infraestrutura, redes e sistemas nas dependências da
+                    Prefeitura Municipal de Brazópolis.
+                  </li>
+                  <li>
+                    Manutenção preventiva e corretiva de servidores de rede locais, estações de
+                    trabalho e periféricos corporativos.
+                  </li>
+                </ul>
+                <ul class="timeline__tags" role="list" aria-label="Tecnologias">
+                  <li class="tag">Redes</li>
+                  <li class="tag">Hardware</li>
+                  <li class="tag">Servidores</li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="projects section section--dark" aria-labelledby="projects-heading">
+      <div class="container projects__inner">
+        <h2 id="projects-heading" class="section__title section__title--light">
+          Projetos de Destaque
+        </h2>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <header class="project-card__header">
+              <span class="project-card__badge">🏆 1º Lugar — Ciência &amp; Tecnologia</span>
+              <h3 class="project-card__title">LIBREX</h3>
+              <p class="project-card__subtitle">Plataforma de Acessibilidade em Libras</p>
+            </header>
+            <p class="project-card__description">
+              Plataforma interativa desenvolvida em colaboração com docentes da UNIFEI para
+              catalogação e consulta dinâmica de vocabulário técnico e regional em Língua
+              Brasileira de Sinais (Libras). Catálogo com indexação alfabética e filtros de
+              busca em tempo real com alta performance e acessibilidade.
+            </p>
+            <footer class="project-card__footer">
+              <ul class="project-card__tags" role="list" aria-label="Tecnologias">
+                <li class="tag tag--light">ReactJS</li>
+                <li class="tag tag--light">TypeScript</li>
+                <li class="tag tag--light">Git</li>
+                <li class="tag tag--light">UI/UX Design</li>
+              </ul>
+              <p class="project-card__award">Prêmio Bota pra Fazer — UNIFEI 2023</p>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header class="project-card__header">
+              <span class="project-card__badge">🎓 Extensão Universitária</span>
+              <h3 class="project-card__title">ExMachina UNIFEI</h3>
+              <p class="project-card__subtitle">Sistema de Gestão de Estoque Social</p>
+            </header>
+            <p class="project-card__description">
+              Atuação na equipe de desenvolvimento de software em projeto de extensão
+              universitária voltado a tecnologias assistivas e impacto social. Desenvolvimento de
+              tabela interativa de gerenciamento de estoque para Casa Lar Itajubá, com ordenação
+              dinâmica, controle de pontos de reposição e status visual de suprimentos.
+            </p>
+            <footer class="project-card__footer">
+              <ul class="project-card__tags" role="list" aria-label="Tecnologias">
+                <li class="tag tag--light">ReactJS</li>
+                <li class="tag tag--light">TypeScript</li>
+                <li class="tag tag--light">Git</li>
+                <li class="tag tag--light">UI/UX</li>
+              </ul>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="skills section" aria-labelledby="skills-heading">
+      <div class="container skills__inner">
+        <div class="section__label-col" aria-hidden="true">
+          <span class="section__label-vertical">HABILIDADES</span>
+        </div>
+
+        <div class="skills__body">
+          <h2 id="skills-heading" class="section__title">
+            Competências<br />Técnicas
+          </h2>
+
+          <dl class="skills__grid">
+            <div class="skills__group">
+              <dt class="skills__category">Linguagens</dt>
+              <dd>
+                <ul class="skills__list" role="list">
+                  <li class="skill-pill">PHP</li>
+                  <li class="skill-pill">JavaScript (ES6+)</li>
+                  <li class="skill-pill">TypeScript</li>
+                  <li class="skill-pill">SQL</li>
+                  <li class="skill-pill">HTML5</li>
+                  <li class="skill-pill">CSS3</li>
+                  <li class="skill-pill">C</li>
+                  <li class="skill-pill">C#</li>
+                </ul>
+              </dd>
+            </div>
+
+            <div class="skills__group">
+              <dt class="skills__category">Frontend</dt>
+              <dd>
+                <ul class="skills__list" role="list">
+                  <li class="skill-pill skill-pill--accent">ReactJS</li>
+                  <li class="skill-pill skill-pill--accent">HTML5 Semântico</li>
+                  <li class="skill-pill skill-pill--accent">CSS3</li>
+                  <li class="skill-pill skill-pill--accent">UI/UX Fundamentals</li>
+                  <li class="skill-pill skill-pill--accent">Acessibilidade (W3C)</li>
+                  <li class="skill-pill skill-pill--accent">Figma</li>
+                </ul>
+              </dd>
+            </div>
+
+            <div class="skills__group">
+              <dt class="skills__category">Backend &amp; Banco de Dados</dt>
+              <dd>
+                <ul class="skills__list" role="list">
+                  <li class="skill-pill">MySQL</li>
+                  <li class="skill-pill">Modelagem Relacional</li>
+                  <li class="skill-pill">API REST</li>
+                  <li class="skill-pill">Scriptcase</li>
+                  <li class="skill-pill">Automação de Rotinas</li>
+                </ul>
+              </dd>
+            </div>
+
+            <div class="skills__group">
+              <dt class="skills__category">Ferramentas &amp; Metodologias</dt>
+              <dd>
+                <ul class="skills__list" role="list">
+                  <li class="skill-pill">Git</li>
+                  <li class="skill-pill">GitHub</li>
+                  <li class="skill-pill">Metodologias Ágeis</li>
+                  <li class="skill-pill">Levantamento de Requisitos</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="education section section--dark" aria-labelledby="education-heading">
+      <div class="container education__inner">
+        <div class="section__label-col section__label-col--light" aria-hidden="true">
+          <span class="section__label-vertical">FORM&shy;AÇÃO</span>
+        </div>
+
+        <div class="education__body">
+          <h2 id="education-heading" class="section__title section__title--light">
+            Formação &amp;<br />Certificações
+          </h2>
+
+          <div class="education__grid">
+            <div class="education__formal">
+              <h3 class="education__sub-title">Educação Formal</h3>
+              <ol class="education__list" reversed>
+                <li class="education__item">
+                  <article>
+                    <div class="education__period">
+                      <time datetime="2026">2026</time> – Presente
+                    </div>
+                    <h4 class="education__degree">Bacharelado em Sistemas de Informação</h4>
+                    <p class="education__institution">
+                      Instituto Federal do Sul de Minas (IFSULDEMINAS) — Campus Machado
+                    </p>
+                  </article>
+                </li>
+
+                <li class="education__item">
+                  <article>
+                    <div class="education__period">Concluído em <time datetime="2018">2018</time></div>
+                    <h4 class="education__degree">
+                      Técnico em Informática Integrado ao Ensino Médio
+                    </h4>
+                    <p class="education__institution">
+                      Centro de Educação Profissional Tancredo Neves — Brazópolis/MG
+                    </p>
+                  </article>
+                </li>
+              </ol>
+            </div>
+
+            <div class="education__courses">
+              <h3 class="education__sub-title">Cursos &amp; Certificações</h3>
+              <ul class="education__list" role="list">
+                <li class="education__item education__item--course">
+                  <article>
+                    <h4 class="education__course-title">Curso UI/UX Design</h4>
+                    <p class="education__course-provider">Origamid</p>
+                    <p class="education__course-desc">
+                      Figma, Acessibilidade em telas digitais, Teoria de Tipografia e Cores.
+                    </p>
+                  </article>
+                </li>
+                <li class="education__item education__item--course">
+                  <article>
+                    <h4 class="education__course-title">Curso HTML e CSS</h4>
+                    <p class="education__course-provider">Origamid</p>
+                    <p class="education__course-desc">
+                      HTML semântico, Acessibilidade W3C, UX/UI em HTML e CSS,
+                      JavaScript em formulários.
+                    </p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER / CONTACT ===================== -->
+  <footer id="contact" class="footer section--dark" aria-labelledby="contact-heading">
+    <div class="container footer__inner">
+      <div class="footer__cta">
+        <h2 id="contact-heading" class="footer__title">Vamos conversar?</h2>
+        <p class="footer__subtitle">
+          Aberto a oportunidades de trabalho presencial, híbrido ou remoto.
+        </p>
+        <a href="mailto:gdiasrosa1@gmail.com" class="btn btn--primary btn--lg">
+          Enviar mensagem
+        </a>
+      </div>
+
+      <div class="footer__divider" aria-hidden="true"></div>
+
+      <address class="footer__contacts" aria-label="Informações de contato">
+        <ul class="footer__contact-list" role="list">
+          <li>
+            <a href="mailto:gdiasrosa1@gmail.com" class="footer__contact-link">
+              <span class="footer__contact-icon" aria-hidden="true">✉</span>
+              gdiasrosa1@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+5535920014988" class="footer__contact-link">
+              <span class="footer__contact-icon" aria-hidden="true">☎</span>
+              (35) 92001-4988
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/gustavo-drosa" class="footer__contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="footer__contact-icon" aria-hidden="true">⌨</span>
+              github.com/gustavo-drosa
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <time datetime="2026">2026</time> Gustavo Dias Rosa. Todos os direitos reservados.
+        </p>
+        <a href="#hero" class="footer__back-top" aria-label="Voltar ao topo">↑ Topo</a>
+      </div>
+    </div>
+
+    <!-- Decorative diagonal accent -->
+    <div class="footer__accent" aria-hidden="true"></div>
+  </footer>
+</body>
+
+<script src="./scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+/* =========================================================
+   BASE — RESET
+   Normaliza comportamentos padrão entre navegadores
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove list styles quando role="list" for declarado no HTML */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Acessibilidade — foco visível */
+:focus-visible {
+  outline: 2px solid var(--color-accent-green);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

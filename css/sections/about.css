@@ -1,0 +1,49 @@
+/* =========================================================
+   SECTION — ABOUT / SUMMARY
+   ========================================================= */
+
+.about__summary {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  max-width: 70ch;
+}
+
+.about__summary strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.about__quick-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-sm);
+}
+
+.about__info-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-accent-gray);
+  font-size: var(--text-sm);
+}
+
+.about__info-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.about__info-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.about__info-link:hover {
+  color: var(--color-accent-orange);
+  text-decoration: underline;
+}

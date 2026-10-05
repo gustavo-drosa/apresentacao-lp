@@ -104,12 +104,154 @@
   top: 7px;
 }
 
+/* Menu mobile */
+/* =========================================================
+   MENU MOBILE (DETAILS & SUMMARY)
+   ========================================================= */
+
+/* Container relativo para posicionar o menu dropdown */
+.menu-mobile {
+  position: relative;
+  display: block;
+}
+
+/* Esconde o marcador/seta nativo do <summary> em todos os navegadores */
+.menu-mobile-botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  list-style: none; /* Padrão moderno */
+  user-select: none;
+}
+
+.menu-mobile-botao::-webkit-details-marker {
+  display: none; /* Safari e navegadores legados baseados em WebKit */
+}
+
+/* Ícone de hambúrguer (3 barras) */
+.menu-mobile-icone,
+.menu-mobile-icone::before,
+.menu-mobile-icone::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text-light);
+  transition:
+    transform var(--transition-base),
+    opacity var(--transition-fast);
+}
+
+.menu-mobile-icone {
+  position: relative;
+}
+
+.menu-mobile-icone::before,
+.menu-mobile-icone::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-mobile-icone::before {
+  top: -7px;
+}
+
+.menu-mobile-icone::after {
+  top: 7px;
+}
+
+/* Animação do ícone virando "X" quando o details estiver aberto */
+.menu-mobile[open] .menu-mobile-icone {
+  background-color: transparent; /* some a barra do meio */
+}
+
+.menu-mobile[open] .menu-mobile-icone::before {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-mobile[open] .menu-mobile-icone::after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Painel suspenso com os links */
+.menu-mobile-lista {
+  position: absolute;
+  top: calc(100% + 1rem);
+  right: 0;
+  width: min(80vw, 260px);
+  background-color: var(--color-dark-surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  list-style: none;
+}
+
+/* Links do menu mobile */
+.menu-mobile-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: var(--text-base);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.menu-mobile-link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--color-accent-green);
+}
+
+.menu-mobile-link--cta {
+  border: 1px solid var(--color-accent-green);
+  color: var(--color-accent-green);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.menu-mobile-link--cta:hover {
+  background-color: var(--color-accent-green);
+  color: var(--color-dark-bg);
+}
+
+/* =========================================================
+   BARRA DE PROGRESSO DE LEITURA
+   ========================================================= */
+.progresso-leitura {
+  position: absolute;
+  bottom: 0; /* Fixa na base do header */
+  left: 0;
+  width: 100%;
+  height: 3px; /* Espessura discreta */
+  background-color: var(--color-accent-green); /* Verde de destaque */
+  transform-origin: left; /* Expande da esquerda para a direita */
+  transform: scaleX(0); /* Começa invisível (0% lido) */
+  pointer-events: none; /* Não interfere em cliques */
+  z-index: 10;
+  transition: transform 50ms linear; /* Suaviza pequenas variações de rolagem */
+}
+
 @media (min-width: 640px) {
   .nav__links {
     display: flex;
   }
 
   .nav__menu-btn {
+    display: none;
+  }
+  .menu-mobile {
     display: none;
   }
 }

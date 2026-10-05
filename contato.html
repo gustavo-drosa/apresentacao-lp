@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com Gustavo Dias Rosa — Desenvolvedor de Software Full Stack." />
+  <title>Contato — Gustavo Dias Rosa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="./scripts/script.js" defer></script>
+</head>
+
+<body class="contato-body">
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="nav container">
+      <a href="index.html" class="nav__logo" aria-label="Ir para o início">
+        <span class="nav__logo-text">GDR</span>
+      </a>
+
+      <a href="index.html" class="btn btn--outline" aria-label="Voltar para a página inicial">
+        ← Voltar ao início
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== FORMULÁRIO DE CONTATO ===================== -->
+  <main class="contato-main container">
+    <div class="form-card">
+      <h1 class="form-title">Entre em contato</h1>
+      <p class="form-subtitle">
+        Preencha os campos abaixo para preparar a sua mensagem. Ao clicar em preparar, um botão com o link pronto será gerado para você enviar diretamente pelo seu aplicativo de e-mail.
+      </p>
+
+      <!-- Formulário com o action apontando para o seu e-mail -->
+      <form id="form-contato" action="mailto:gdiasrosa1@gmail.com" method="GET" novalidate>
+
+        <!-- Campo: Nome -->
+        <div class="form-group">
+          <label for="nome" class="form-label">Seu Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            class="form-input"
+            placeholder="Ex: Maria Silva"
+            maxlength="80"
+            required
+          />
+          <span id="erro-nome" class="form-erro" hidden></span>
+        </div>
+
+        <!-- Campo: E-mail -->
+        <div class="form-group">
+          <label for="email" class="form-label">Seu E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="seuemail@exemplo.com"
+            maxlength="100"
+            required
+          />
+          <span id="erro-email" class="form-erro" hidden></span>
+        </div>
+
+        <!-- Campo: Assunto -->
+        <div class="form-group">
+          <label for="assunto" class="form-label">Assunto</label>
+          <select id="assunto" name="assunto" class="form-select" required>
+            <option value="">Selecione um assunto...</option>
+            <option value="Oportunidade Profissional">Oportunidade Profissional</option>
+            <option value="Projeto Freelance">Projeto Freelance</option>
+            <option value="Dúvida ou Parceria">Dúvida ou Parceria</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <span id="erro-assunto" class="form-erro" hidden></span>
+        </div>
+
+        <!-- Campo: Mensagem -->
+        <div class="form-group">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            class="form-textarea"
+            rows="5"
+            placeholder="Escreva sua mensagem com detalhes..."
+            maxlength="1000"
+            required
+          ></textarea>
+          <span id="erro-mensagem" class="form-erro" hidden></span>
+        </div>
+
+        <!-- Botão de Preparar Rascunho -->
+        <button type="submit" class="btn btn--primary">
+          Preparar Rascunho
+        </button>
+      </form>
+
+      <!-- Mensagens e o botão gerado para envio -->
+      <div class="form-resultado">
+        <p id="feedback-formulario" class="form-feedback" hidden></p>
+
+        <!-- Botão dinâmico que abre o cliente de e-mail -->
+        <a
+          id="abrir-rascunho"
+          class="btn btn--primary btn--lg"
+          hidden
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ✉ Abrir no meu aplicativo de e-mail →
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER SIMPLES ===================== -->
+  <footer class="footer" style="padding-block: var(--space-md); border-top: 1px solid rgba(255, 255, 255, 0.06);">
+    <div class="container" style="text-align: center;">
+      <p class="footer__copy">
+        &copy; <time datetime="2026" data-ano>2026</time> Gustavo Dias Rosa. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

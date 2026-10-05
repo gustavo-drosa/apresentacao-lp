@@ -18,11 +18,15 @@
 <body>
   <!-- ===================== NAVIGATION ===================== -->
   <header class="site-header">
+
+    <div id="progresso-leitura" class="progresso-leitura" aria-hidden="true"></div>
+
     <nav class="nav container" aria-label="Navegação principal">
       <a href="#hero" class="nav__logo" aria-label="Ir para o topo">
         <span class="nav__logo-text">GDR</span>
       </a>
 
+      <!-- Menu desktop -->
       <ul class="nav__links" role="list">
         <li><a href="#about" class="nav__link">Sobre</a></li>
         <li><a href="#experience" class="nav__link">Experiências</a></li>
@@ -31,10 +35,24 @@
         <li><a href="#contact" class="nav__link nav__link--cta">Contato</a></li>
       </ul>
 
-      <!-- Mobile menu button -->
-      <button class="nav__menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-mobile" type="button">
-        <span class="nav__menu-icon"></span>
-      </button>
+      <!-- Mobile menu -->
+      <!-- Mobile menu -->
+      <details class="menu-mobile">
+        <!-- 1. O summary contém APENAS o botão/ícone -->
+        <summary class="menu-mobile-botao" aria-label="Menu de navegação">
+          <span class="menu-mobile-icone"></span>
+        </summary>
+
+        <!-- 2. A lista fica FORA do summary, logo abaixo dele -->
+        <ul class="menu-mobile-lista" role="list">
+          <li><a href="#about" class="menu-mobile-link">Sobre</a></li>
+          <li><a href="#experience" class="menu-mobile-link">Experiências</a></li>
+          <li><a href="#projects" class="menu-mobile-link">Projetos</a></li>
+          <li><a href="#education" class="menu-mobile-link">Formação</a></li>
+          <li><a href="#contact" class="menu-mobile-link menu-mobile-link--cta">Contato</a></li>
+        </ul>
+      </details>
+
     </nav>
   </header>
 
@@ -60,8 +78,8 @@
         </div>
 
         <div class="hero__image-wrapper" aria-hidden="true">
-          <div class="hero__image-placeholder">
-            <span class="hero__image-initials">GDR</span>
+          <div class="hero__image">
+            <img src="/img/profile-picture.jpeg" alt="">
           </div>
         </div>
       </div>
@@ -443,21 +461,29 @@
         <p class="footer__subtitle">
           Aberto a oportunidades de trabalho presencial, híbrido ou remoto.
         </p>
-        <a href="mailto:gdiasrosa1@gmail.com" class="btn btn--primary btn--lg">
+        <a href="contato.html" class="btn btn--primary btn--lg">
           Enviar mensagem
         </a>
       </div>
 
       <div class="footer__divider" aria-hidden="true"></div>
 
-      <address class="footer__contacts" aria-label="Informações de contato">
+      <address class="footer__contacts canais-contato" aria-label="Informações de contato">
         <ul class="footer__contact-list" role="list">
-          <li>
+          <!-- Item com o e-mail e o botão de copiar -->
+          <li class="footer__contact-item-email">
             <a href="mailto:gdiasrosa1@gmail.com" class="footer__contact-link">
               <span class="footer__contact-icon" aria-hidden="true">✉</span>
               gdiasrosa1@gmail.com
             </a>
+
+            <!-- Botão de cópia e mensagem de confirmação -->
+            <button type="button" id="copiar-email" class="btn-copiar" aria-label="Copiar e-mail" title="Copiar e-mail">
+              Copiar
+            </button>
+            <span id="feedback-copia" class="feedback-copia" aria-live="polite"></span>
           </li>
+
           <li>
             <a href="tel:+5535920014988" class="footer__contact-link">
               <span class="footer__contact-icon" aria-hidden="true">☎</span>
@@ -475,7 +501,7 @@
 
       <div class="footer__bottom">
         <p class="footer__copy">
-          &copy; <time datetime="2026">2026</time> Gustavo Dias Rosa. Todos os direitos reservados.
+          &copy; <time datetime="2026" data-ano>2026</time> Gustavo Dias Rosa. Todos os direitos reservados.
         </p>
         <a href="#hero" class="footer__back-top" aria-label="Voltar ao topo">↑ Topo</a>
       </div>

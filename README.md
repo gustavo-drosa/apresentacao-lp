@@ -1,2 +1,3 @@
 # apresentacao-lp
-# pagina-apresentacao-web2
+
+Página WEB desenvolvida para a atividade de Desenvolvimento WEB 2
